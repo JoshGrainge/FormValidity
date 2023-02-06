@@ -1,0 +1,16 @@
+form * {
+  display: block;
+}
+
+form > label {
+  margin-top: 20px;
+}
+
+input:invalid {
+  background-color: red;
+}
+
+.error {
+  font-size: 0.85rem;
+  color: red;
+}

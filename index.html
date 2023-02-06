@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./index.js" defer></script>
+    <title>Form Validity</title>
+  </head>
+  <body>
+    <form id="user-info" novalidate>
+      <label for="mail">Email: </label>
+      <input type="email" id="mail" required />
+      <span class="error"></span>
+
+      <label for="country">Country: </label>
+      <input type="text" id="country" required />
+      <span class="error"></span>
+
+      <label for="zip">Zip Code: </label>
+      <input type="text" id="zip" required />
+      <span class="error"
+        >Please enter a valid zip code in the xxx-xxx format</span
+      >
+
+      <label for="pass">Password: </label>
+      <input type="password" id="pass" required />
+      <span class="error"
+        >Please enter a valid password of 8 or more character with at least one
+        uppercase and one lowercase character and a special character
+        (@*%!)</span
+      >
+
+      <label for="confirm-pass">Confirm Password: </label>
+      <input type="password" id="confirm-pass" required />
+      <span class="error">Passwords do not match</span>
+
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+</html>
